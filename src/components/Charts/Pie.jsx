@@ -3,15 +3,11 @@ import { AccumulationChartComponent, AccumulationDataLabel, AccumulationLegend,A
 
 // Dummy data for demo purposes
 import { pieChartData, } from '../../data/dummy';
-import { Header } from '../../components';
 
-import { useStateContext } from '../../contexts/ContextProvider';
 
 const Doughnut = () => {
-  const { currentMode } = useStateContext();
   return (
     <AccumulationChartComponent
-    // background={currentMode === 'Dark' ? '#33373E': '#fff'}
     id="pie-chart"
     height="420px"
     enableSmartLabels={true}
